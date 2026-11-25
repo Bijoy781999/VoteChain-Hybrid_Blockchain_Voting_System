@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="VoteChain Logo">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="55%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <linearGradient id="checkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.32" />
+      <stop offset="65%" stop-color="#8b5cf6" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Outer Dark Rounded Tile -->
+  <rect x="10" y="10" width="180" height="180" rx="42" fill="url(#cardBg)" stroke="url(#brandGrad)" stroke-width="3" />
+
+  <!-- Subtle Glow -->
+  <circle cx="100" cy="100" r="78" fill="url(#centerGlow)" />
+
+  <!-- Outer Chain Hexagon -->
+  <polygon
+    points="100,34 157,67 157,133 100,166 43,133 43,67"
+    fill="none"
+    stroke="url(#brandGrad)"
+    stroke-width="3.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Inner Hexagon Ring -->
+  <polygon
+    points="100,48 145,74 145,126 100,152 55,126 55,74"
+    fill="#0b1120"
+    fill-opacity="0.85"
+    stroke="#4f46e5"
+    stroke-opacity="0.55"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Vertex Nodes -->
+  <circle cx="100" cy="34" r="6" fill="#090d16" stroke="#818cf8" stroke-width="2.5" />
+  <circle cx="157" cy="67" r="6" fill="#090d16" stroke="#818cf8" stroke-width="2.5" />
+  <circle cx="157" cy="133" r="6" fill="#090d16" stroke="#a78bfa" stroke-width="2.5" />
+  <circle cx="100" cy="166" r="6" fill="#090d16" stroke="#c084fc" stroke-width="2.5" />
+  <circle cx="43" cy="133" r="6" fill="#090d16" stroke="#a78bfa" stroke-width="2.5" />
+  <circle cx="43" cy="67" r="6" fill="#090d16" stroke="#818cf8" stroke-width="2.5" />
+
+  <!-- Ballot Card Emblem -->
+  <rect x="74" y="68" width="52" height="64" rx="10" fill="#0f172a" stroke="#6366f1" stroke-width="2.5" />
+  <line x1="85" y1="81" x2="115" y2="81" stroke="#475569" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Verified Vote Checkmark -->
+  <path
+    d="M84 104 L95 115 L117 91"
+    fill="none"
+    stroke="url(#checkGrad)"
+    stroke-width="6.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
