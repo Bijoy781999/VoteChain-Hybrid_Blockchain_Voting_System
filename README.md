@@ -80,6 +80,30 @@ flowchart LR
     AP -->|Optional Admin Mode| MM -->|createElection / setPhase| SC
     SYNC <-->|Startup & On-Demand Sync| SC
     SYNC <--> DB
+
+    classDef voterNode fill:#4f46e5,stroke:#312e81,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef candidateNode fill:#9333ea,stroke:#581c87,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adminNode fill:#d97706,stroke:#78350f,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef walletNode fill:#ea580c,stroke:#7c2d12,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef apiNode fill:#0284c7,stroke:#0c4a6e,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef serviceNode fill:#0d9488,stroke:#134e4a,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef dbNode fill:#16a34a,stroke:#14532d,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef chainNode fill:#7c3aed,stroke:#4c1d95,stroke-width:3px,color:#ffffff,font-weight:bold
+
+    class VP,ER voterNode
+    class CP candidateNode
+    class AP adminNode
+    class MM walletNode
+    class API,AUTH apiNode
+    class REL,SYNC serviceNode
+    class DB dbNode
+    class SC chainNode
+
+    style Client fill:#eef2ff,stroke:#4f46e5,stroke-width:2px,color:#1e1b4b
+    style Server fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#064e3b
+    style Chain fill:#f5f3ff,stroke:#7c3aed,stroke-width:2px,color:#2e1065
+
+    linkStyle default stroke:#4f46e5,stroke-width:2px
 ```
 
 ### Hybrid Transaction Origin Matrix
